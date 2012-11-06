@@ -531,7 +531,7 @@ table {
 body {
   padding: 0px 0 20px 0px;
   margin: 0px;
-  font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 16px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #f0e7d5;
   font-weight: normal;
   background: #252525;
@@ -782,15 +782,13 @@ dt {
 
 section {
   max-width: 650px;
-  padding: 30px 0px 50px 0px;
+  padding: 20px 0px 20px 0px;
   margin: 20px 0;
-  margin-top: 70px;
 }
 section #title {
   border: 0;
   outline: none;
-  margin: 0 0 50px 0;
-  padding: 0 0 5px 0;
+  margin: 70px 0 0 0;
 }
 section #title h1 {
   font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -805,19 +803,6 @@ section #title p {
   font-weight: normal;
   font-size: 18px;
   text-align: center;
-}
-section #title .credits {
-  font-size: 11px;
-  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  color: #696969;
-  margin-top: -10px;
-}
-section #title .credits.left {
-  float: left;
-}
-section #title .credits.right {
-  float: right;
 }
 
 @media print, screen and (max-width: 720px) {
