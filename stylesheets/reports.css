@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hdr {
+  margin:2em;
+}
+.hdr-l {
+  width: 50%;
+  float:left;
+}
+.hdr h1,h2,h3 {
+  color: grey;
+}
+
+.hdr-r {
+  width: 50%;
+  float:right;
+  text-align:right;
+}
+
+
+nav {
+  margin-top: 110px;
+  margin-left: 17%;
+}
+
+ul {
+  overflow: auto;
+  list-style-type: none;
+  margin:0 auto;
+}
+
+li {
+  height: 25px;
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #aaa;
+  padding: 0 20px;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  text-decoration: none;
+  color: darkgrey;
+  font: 1.25em Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  text-transform: uppercase;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+li a:hover {
+  color: #666;
+}
+
+li.active a {
+  font-weight: bold;
+  color: #333;
+}
+
+.what {
+  border: 2px solid lightgrey;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: rgba(128, 128, 128, 0.12);
+  margin: 3em;
+  max-width: 900px;
+}
+.what span {
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 1em;
+}
+
+.goal .ck {
+  float: left;
+}
+
+.loop, .goal {
+  clear: both;
+}
+
+.divisor {
+  clear: both;
+  margin: 5em 4em 2em 4em;
+}
+
+.goal .pic {
+  width: 60%;
+  border: 0.3em solid grey;
+  border-radius: 1em;
+}
+.goal .comment {
+  clear: both;
+  margin-top: 3em;
+}
+
+.roundedTwo {
+  margin-top: -5px;
+  margin-left: 15px;
+  float: left;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  background: #fcfff4;
+  background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  border-radius: 50px;
+  box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.roundedTwo label {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  cursor: pointer;
+  background: -webkit-linear-gradient(top, #222222 0%, #45484d 100%);
+  background: linear-gradient(to bottom, #222222 0%, #45484d 100%);
+  border-radius: 50px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px white;
+}
+.roundedTwo label:after {
+  content: '';
+  width: 9px;
+  height: 5px;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  border: 3px solid greenyellow;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  opacity: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.roundedTwo label:hover::after {
+  opacity: 0.3;
+}
+.roundedTwo input[type=checkbox] {
+  visibility: hidden;
+}
+.roundedTwo input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
